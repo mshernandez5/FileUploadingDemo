@@ -9,3 +9,12 @@ Running The Demo:
 4) Drag files into the upload area to automatically upload them to the server. If you customized the server port then change the `POST Endpoint` in the interface accordingly.
 
 ![client](screenshot/client.png)
+
+# Important Note
+By default, Spring restricts the file upload size to about 1MB.
+To change this, you can modify these settings in your `application.properties` and set a new maximum.
+For example, to increase the max to 512MB you can add:
+```properties
+spring.servlet.multipart.max-file-size = 512MB
+spring.servlet.multipart.max-request-size = 512MB
+```
