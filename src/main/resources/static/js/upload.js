@@ -3,7 +3,7 @@
  */
 
 // Default File POST Endpoint
-let uploadEndpoint = 'http://localhost:8080/api/uploadFile';
+let uploadEndpoint = window.location.origin + '/api/uploadFile';
 
 // Get Form Element References
 let endpointSelector = document.querySelector('#endpoint-selector');
